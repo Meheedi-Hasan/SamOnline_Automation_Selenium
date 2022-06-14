@@ -5,8 +5,8 @@
     <classes>
       <class name="testcase.Registration">
         <methods>
-          <include name="registration"/>
           <include name="setup"/>
+          <include name="registration"/>
           <include name="openPage"/>
         </methods>
       </class> <!-- testcase.Registration -->
