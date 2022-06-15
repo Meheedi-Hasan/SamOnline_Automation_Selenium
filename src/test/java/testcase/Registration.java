@@ -24,11 +24,11 @@ public class Registration extends Driver {
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 	}
-	
-	@Test
+	/*
+	@Test(priority=1)
 	public static void registration() throws InterruptedException, Exception{
 		
-		File src = new File("E:\\Riseup Labs\\Eclipse-Workspace\\Data.xlsx");
+		File src = new File("E:\\Riseup Labs\\Eclipse-Workspace\\Data_Sheet\\Data.xlsx");
 		FileInputStream fis = new FileInputStream(src);
 		XSSFWorkbook xsf = new XSSFWorkbook(fis);
 		XSSFSheet sheet = xsf.getSheetAt(0);
@@ -85,6 +85,46 @@ public class Registration extends Driver {
 		Thread.sleep(3000);
 		
 	
+	}
+	*/
+	@Test(priority=2)
+	public static void Login() throws InterruptedException, Exception{
+		
+		File src = new File("E:\\Riseup Labs\\Eclipse-Workspace\\Data_Sheet\\Data.xlsx");
+		FileInputStream fis = new FileInputStream(src);
+		XSSFWorkbook xsf = new XSSFWorkbook(fis);
+		XSSFSheet sheet = xsf.getSheetAt(0);
+		
+		String u_name = sheet.getRow(0).getCell(0).getStringCellValue();
+		String pass = sheet.getRow(0).getCell(2).getStringCellValue();
+		
+		
+		driver.findElement(By.xpath("//a[normalize-space()='Login']")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//div[@class='stm_lms_login_wrapper']//input[@placeholder='Enter username']")).sendKeys(u_name);
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//div[@class='stm_lms_login_wrapper']//input[@placeholder='Enter password']")).sendKeys(pass);
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//a[@class='btn btn-default']")).click();
+		Thread.sleep(3000);
+		
+	}
+	
+	@Test(priority=3)
+	public static void Course() throws InterruptedException, Exception{
+		
+		driver.findElement(By.xpath("(//a[contains(text(),'Course')])[3]")).click();
+		Thread.sleep(3000);
+		
+		// select Start Course
+		driver.findElement(By.xpath("//span[normalize-space()='Start course']")).click();
+		Thread.sleep(3000);
+		
+		//play video
+		driver.findElement(By.xpath("//i[@class='stm_lms_play']")).click();
+		Thread.sleep(3000);
+		//i[@class='stm_lms_play']
+		
 	}
 
 	private static FileInputStream FileInputStream(String string) {
