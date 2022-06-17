@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-15T20:35:56 BDT" name="Default suite" finished-at="2022-06-15T20:36:57 BDT" duration-ms="61846">
+  <suite started-at="2022-06-17T20:03:15 BDT" name="Default suite" finished-at="2022-06-17T20:06:53 BDT" duration-ms="217187">
     <groups>
     </groups>
-    <test started-at="2022-06-15T20:35:56 BDT" name="Default test" finished-at="2022-06-15T20:36:57 BDT" duration-ms="61846">
+    <test started-at="2022-06-17T20:03:15 BDT" name="Default test" finished-at="2022-06-17T20:06:53 BDT" duration-ms="217187">
       <class name="base.Driver">
-        <test-method is-config="true" signature="setup()[pri:0, instance:base.Driver@82de64a]" started-at="2022-06-15T20:35:54 BDT" name="setup" finished-at="2022-06-15T20:35:56 BDT" duration-ms="1766" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:base.Driver@201a4587]" started-at="2022-06-17T20:03:14 BDT" name="setup" finished-at="2022-06-17T20:03:15 BDT" duration-ms="1697" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- base.Driver -->
       <class name="testcase.Registration">
-        <test-method is-config="true" signature="openPage()[pri:0, instance:testcase.Registration@59505b48]" started-at="2022-06-15T20:35:56 BDT" name="openPage" finished-at="2022-06-15T20:36:03 BDT" duration-ms="7881" status="PASS">
+        <test-method is-config="true" signature="openPage()[pri:0, instance:testcase.Registration@13fd2ccd]" started-at="2022-06-17T20:03:15 BDT" name="openPage" finished-at="2022-06-17T20:03:30 BDT" duration-ms="15102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openPage -->
-        <test-method signature="Login()[pri:2, instance:testcase.Registration@59505b48]" started-at="2022-06-15T20:36:03 BDT" name="Login" finished-at="2022-06-15T20:36:18 BDT" duration-ms="14705" status="PASS">
+        <test-method signature="Login()[pri:1, instance:testcase.Registration@13fd2ccd]" started-at="2022-06-17T20:03:30 BDT" name="Login" finished-at="2022-06-17T20:03:46 BDT" duration-ms="15899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Course()[pri:3, instance:testcase.Registration@59505b48]" started-at="2022-06-15T20:36:18 BDT" name="Course" finished-at="2022-06-15T20:36:57 BDT" duration-ms="39212" status="PASS">
+        <test-method signature="Course()[pri:2, instance:testcase.Registration@13fd2ccd]" started-at="2022-06-17T20:03:46 BDT" name="Course" finished-at="2022-06-17T20:05:04 BDT" duration-ms="77954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Course -->
+        <test-method signature="MyCourse()[pri:3, instance:testcase.Registration@13fd2ccd]" started-at="2022-06-17T20:05:04 BDT" name="MyCourse" finished-at="2022-06-17T20:06:24 BDT" duration-ms="79599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyCourse -->
+        <test-method signature="My_profile()[pri:4, instance:testcase.Registration@13fd2ccd]" started-at="2022-06-17T20:06:24 BDT" name="My_profile" finished-at="2022-06-17T20:06:46 BDT" duration-ms="21672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- My_profile -->
+        <test-method is-config="true" signature="Logout()[pri:0, instance:testcase.Registration@13fd2ccd]" started-at="2022-06-17T20:06:46 BDT" name="Logout" finished-at="2022-06-17T20:06:53 BDT" duration-ms="6919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
       </class> <!-- testcase.Registration -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

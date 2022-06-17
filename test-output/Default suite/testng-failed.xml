@@ -5,9 +5,10 @@
     <classes>
       <class name="testcase.Registration">
         <methods>
+          <include name="Settings"/>
           <include name="setup"/>
-          <include name="registration"/>
           <include name="openPage"/>
+          <include name="Logout"/>
         </methods>
       </class> <!-- testcase.Registration -->
     </classes>
